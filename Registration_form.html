@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>University Results</title>
+</head>
+<body>
+    <h1 align=" center">Registration Page</h1>
+    <center>
+       
+    <form style="color:blue;">
+            
+        First Name:<br>
+       <!-- <input type="text" name="First_Name" required><br>!-->
+        <input type="text" name="First_Name" pattern="[A-Za-z]{0,25}" required>
+        <br>
+        Last Name:<br>
+        <input type="text" name="Last_Name" pattern="[A-Za-z]{0,25}" required><br>
+        Address:<br>
+        <input type="" textarea rows="4" cols="30" pattern="[0-9a-zA-Z/\\@#$%!?*-_]{2,50}" required> </textarea><br>
+        email:<br>
+        <input type="email" name="email" required placeholder="Enter a valid email address"><br>
+        City:<br>
+        <select name="city" required>
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="nlr">Nellore</option>
+                <option value="ctr">Chittoor</option>
+                <option value="Hyd">Hyderabad</option>
+                <option value="krnl">Kurnool</option>
+              </select>
+              <br>
+              <br>
+        State:<br>
+        <select name="state" required>
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="TS">Telangana</option>
+              </select>
+              <br>
+              <br>
+        University branch Name:<br>
+      <!--  <select name="u_branchName">
+                <option value="" selected disabled hidden>Choose here</option>
+                <option value="apb">Andhra Pradesh Branch</option>
+                <option value="TS">Telangana Branch</option>
+              </select>!-->
+              <input type="text" name="University_BranchName" required><br>
+              <br>
+              <br>
+              Phone NUmber:<br>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+              <br><br>
+        Enrolled Course:<br>
+        <!--<a href="course_details.html">click here to select the course</a>!-->
+        <input type="text" name="Enrolled_Course" pattern="[A-Za-z0-9]{5}" required>
+        <br>
+        <br>
+        Date of Test:<br>
+        <input type="date" name="dateoftest" required>
+        <br>
+        <br>
+        Marks Obtained:<br>
+        <input type="number" size="3" name="marks" min="50" max="100" value="55" required>
+        <br><br>
+        <input type="submit" value="Submit">
+            
+
+
+    </form>
+
+    </center>
+</body>
+
+</html>
